@@ -503,38 +503,17 @@
           <div class="row">
             <!-- Contact form-->
             <div class="col-12">
-              <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="subject" 
-                value="Sales inquiry from mysitename.netlify.app" />
-                <p>
-                  <label>Your Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                  <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                  <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                  <button type="submit">Send</button>
-                </p>
+              <form class="contact-form" id="contact-form" name="contact" method="POST" netlify onsubmit="submit">
+                <div class="row">
+                  <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-name" type="text" name="name" placeholder="Name" required=""></div>
+                  <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-email" type="email" name="email" placeholder="Email" required=""></div>
+                  <div class="col-12 form-group"><input class="form-control" id="contact-subject" type="text" name="subject" placeholder="Subject" required=""></div>
+                  <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message" name="message" placeholder="Message" rows="5" required=""></textarea></div>
+                  <div class="col-12 form-submit"><button class="btn button-main button-scheme" id="contact-submit" type="submit">Send message</button>
+                    <p class="contact-feedback"></p>
+                  </div>
+                </div>
               </form>
-              <form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="subject" 
-                value="Sales inquiry from mysitename.netlify.app" />
-                <p>
-                  <label>Your Name: <input type="text" name="name" /></label>
-                </p>
-                <p>
-                  <label>Your Email: <input type="email" name="email" /></label>
-                </p>
-                <p>
-                  <label>Message: <textarea name="message"></textarea></label>
-                </p>
-                <p>
-                  <button type="submit">Send</button>
-                </p>
-              </form>                            
             </div>
           </div>
         </div>
